@@ -12,6 +12,7 @@ const TopFashion = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
+        marginTop:10
       }}
     >
       <button

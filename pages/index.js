@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 import BrowseComp from '../components/Browse-categories/BrowseComp'
 import TopFashion from '../components/TopFashion'
 import Latest from '../components/Latest'
+import Featured from '../components/featured-products/Featured'
 
 
 
@@ -20,10 +21,10 @@ export default function Home() {
 
 
 
-
-      <Promo />
+      <Featured/>
       <TopFashion />
       <Latest />
+      <Promo />
       <BrowseComp />
 
 
