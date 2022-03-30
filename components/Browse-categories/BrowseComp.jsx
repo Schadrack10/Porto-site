@@ -11,7 +11,7 @@ const container = {
   // background:"red",
   minHeight: "100vh",
   width: "100%",
-  marginTop:20
+  marginTop:10
 };
 const header = {
   width: "100%",

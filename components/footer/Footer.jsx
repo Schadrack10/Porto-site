@@ -420,7 +420,7 @@ const Footer = () => {
             </Box>
           </Grid>
         </Grid>
-      </Box>#777
+      </Box>
     </footer>
   );
 };
