@@ -1,4 +1,15 @@
 import Head from 'next/head'
+<<<<<<< HEAD
+import Image from 'next/image'
+import Promo from '../components/Promo'
+import styles from '../styles/Home.module.css'
+
+export default function Home() {
+  return (
+    <>
+    <Promo/>
+    </>
+=======
 import BrowseComp from '../components/Browse-categories/BrowseComp'
 
 export default function Home() {
@@ -16,5 +27,6 @@ export default function Home() {
   
       
     </div>
+>>>>>>> 7e21ffe120f9800b2c3adfae5db1c1a5e2aea3ee
   )
 }
