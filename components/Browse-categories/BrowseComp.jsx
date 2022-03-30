@@ -69,7 +69,7 @@ const BrowseComp = () => {
         >
           <legend style={{ margin: "0 auto",position:"absolute",width:"250px",zIndex:"1",background:"#fff"}}>
             <Typography variant="h6" align="center" sx={{ fontWeight: "bolder" }}>
-              Browse Categories 
+              BROWSE CATEGORIES
             </Typography>
           </legend>
         </fieldset>
