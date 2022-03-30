@@ -4,8 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function MyApp({ Component, pageProps , children }) {
   return(
-    
-    <Layout>
+    <Layout children={children}>
       <Component {...pageProps} />
 
     </Layout>
