@@ -6,9 +6,11 @@ import BrowseProduct from "./BrowseProduct";
 import HeadsetMicIcon from "@mui/icons-material/HeadsetMic";
 
 const container = {
-  // border: "1px solid red",
+  // background:"red",
   minHeight: "100vh",
   width: "100%",
+  padding:"30px 0",
+  marginTop:"400px"
 };
 const header = {
   width: "100%",
@@ -30,7 +32,7 @@ const layer = {
   width: "100%",
 };
 const gridContainer = {
-  height: "240px",
+  minHeight: "240px",
   width: "100%",
 };
 const box = {
@@ -44,14 +46,7 @@ const box = {
   padding: "20px 40px ",
   // justifyContent:"space-around"
 };
-// export const getStaticProps = async() => {
-//     const res = await  fetch('https://fakestoreapi.com/products/1') ;
-//      const data = await res.json();
 
-//      return {
-//        props:{d:data}
-//      }
-// }
 
 const BrowseComp = () => {
   return (
@@ -59,15 +54,21 @@ const BrowseComp = () => {
       <Box sx={header}>
         <fieldset
           style={{
+            width:"100%",
+            margin:"30px 0",
+             
+            display:"flex",
+            alignItems:"center",
+            justifyContent:"center",
             borderBottom: "0",
             borderRight: "0",
             borderLeft: "0",
-            borderTop: "5px double lightgrey",
+            border: "1px double lightgrey",
           }}
         >
-          <legend style={{ margin: "0 auto", padding: "10px 10px" }}>
-            <Typography variant="h6" sx={{ fontWeight: "bolder" }}>
-              Browse Categories
+          <legend style={{ margin: "0 auto",position:"absolute",width:"250px",zIndex:"1",background:"#fff"}}>
+            <Typography variant="h6" align="center" sx={{ fontWeight: "bolder" }}>
+              Browse Categories 
             </Typography>
           </legend>
         </fieldset>
@@ -83,7 +84,7 @@ const BrowseComp = () => {
         <Grid container sx={gridContainer}>
           <Grid item md={4} sm={12} xs={12} sx={box}>
             {/* icon */}
-            <HeadsetMicIcon fontSize="large" olor="primary" />
+            <HeadsetMicIcon fontSize="large" color="primary" />
             <Typography
               variant="h6"
               fontSize={16}
@@ -91,6 +92,7 @@ const BrowseComp = () => {
                 color: "#000",
                 fontWeight: "bold",
                 textTransform: "uppercase",
+                margin:"15px 0"
               }}
             >
            CUSTomer support
@@ -103,6 +105,7 @@ const BrowseComp = () => {
                 fontWeight: "bold",
                 textTransform: "capitalize",
                 color: "#888",
+                margin:"15px 0"
               }}
             >
               you wont be alone
@@ -125,7 +128,7 @@ const BrowseComp = () => {
           </Grid>
           <Grid item md={4} sm={12} xs={12} sx={box}>
             {/* icon */}
-            <HeadsetMicIcon fontSize="large" />
+            <HeadsetMicIcon fontSize="large" color="primary" />
             <Typography
               variant="h6"
               fontSize={16}
@@ -133,6 +136,7 @@ const BrowseComp = () => {
                 color: "#000",
                 fontWeight: "bold",
                 textTransform: "uppercase",
+                margin:"15px 0"
               }}
             >
            fully customizable
@@ -145,6 +149,7 @@ const BrowseComp = () => {
                 fontWeight: "bold",
                 textTransform: "capitalize",
                 color: "#888",
+                margin:"15px 0"
               }}
             >
          tons of option
@@ -167,7 +172,7 @@ const BrowseComp = () => {
           </Grid>
           <Grid item md={4} sm={12} xs={12} sx={box}>
             {/* icon */}
-            <HeadsetMicIcon fontSize="large" />
+            <HeadsetMicIcon fontSize="large" color="primary" sx={{}}/>
             <Typography
               variant="h6"
               fontSize={16}
@@ -175,6 +180,7 @@ const BrowseComp = () => {
                 color: "#000",
                 fontWeight: "bold",
                 textTransform: "uppercase",
+                margin:"15px 0"
               }}
             >
             powerful admin
@@ -188,6 +194,7 @@ const BrowseComp = () => {
                 fontWeight: "bold",
                 textTransform: "capitalize",
                 color: "#888",
+                margin:"15px 0"
               }}
             >
               made to help you
