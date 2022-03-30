@@ -1,6 +1,15 @@
 import React from 'react'
 import Typography from "@mui/material/Typography";
 
+
+
+
+const img = {
+  width:"100px",
+  height:"100px"
+}
+
+
 function Latest() {
   return (
     <div style={{marginTop:"80px",}}>
@@ -28,58 +37,65 @@ function Latest() {
         <div 
         style={{
             display:"flex",
-            marginLeft:"10px",
-            marginTop:"30px",
+            flexWrap:"wrap",
+            // justifyContent:"space-around"
             }}>
 
             
-          <div style={{marginLeft:"30px",}}>
-              <img src='fashionpic-one.jpg' style={{width:"280px",height:"200px",}}/>
-              <p style={{fontWeight:"bold",}}>GLOW UP'S</p>
-              <button 
-              style={{
-                  border:"none",
-                  color:"white",
-                  backgroundColor:"black",
-                  height:"50px",
-                  }}>VIEW MORE</button>
-          </div>
+    
 
-          <div style={{marginLeft:"30px",}}>
-          <img src='fashionpic-two.jpg' style={{width:"290px",height:"200px",}}/>
-          <p style={{fontWeight:"bold",}}>NEW FEMALE TREND</p>
+          <div style={{ width:"250px",flex:"1",margin:"0 10px"}}>
+          <img src='fashionpic-one.jpg' style={{width:"100%",height:"200px",}}/>
+          <p style={{fontWeight:"bold",textAlign:"center"}}>NEW FEMALE TREND</p>
           <button
           style={{
             border:"none",
             color:"white",
             backgroundColor:"black",
-            height:"50px",
+            padding:"20px",
+            width:"100%"
             }}>VIEW MORE</button>
           </div>
-
-          <div style={{marginLeft:"30px",}}>
-          <img src='fashionpic-three.jpg' style={{width:"290px",height:"200px",}}/>
-          <p style={{fontWeight:"bold",}}>FASHION HATS</p>
+          <div style={{ width:"250px",flex:"1",margin:"0 10px"}}>
+          <img src='fashionpic-four.jpg' style={{width:"100%",height:"200px",}}/>
+          <p style={{fontWeight:"bold",textAlign:"center"}}>NEW FEMALE TREND</p>
           <button
           style={{
             border:"none",
             color:"white",
             backgroundColor:"black",
-            height:"50px",
+            padding:"20px",
+            width:"100%"
             }}>VIEW MORE</button>
           </div>
-
-          <div style={{marginLeft:"30px",}}>
-          <img src='fashionpic-four.jpg' style={{width:"290px",height:"200px",}}/>
-          <p style={{fontWeight:"bold",}}>NEW MEN TREND</p>
+          <div style={{ width:"250px",flex:"1",margin:"0 10px"}}>
+          <img src='fashionpic-two.jpg' style={{width:"100%",height:"200px",}}/>
+          <p style={{fontWeight:"bold",textAlign:"center"}}>NEW FEMALE TREND</p>
           <button
           style={{
             border:"none",
             color:"white",
             backgroundColor:"black",
-            height:"50px",
+            padding:"20px",
+            width:"100%"
             }}>VIEW MORE</button>
           </div>
+          <div style={{width:"250px",flex:"1",margin:"0 10px"}}>
+          <img src='fashionpic-three.jpg' style={{width:"100%",height:"200px",}}/>
+          <p style={{fontWeight:"bold",textAlign:"center"}}>NEW FEMALE TREND</p>
+          <button
+          style={{
+            border:"none",
+            color:"white",
+            backgroundColor:"black",
+            padding:"20px",
+            width:"100%"
+            }}>VIEW MORE</button>
+          </div>
+             
+       
+      
+     
 
 
         </div>

@@ -18,14 +18,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-     
-    <Promo/>
-    <TopFashion/>
-    <Latest/>
-          <BrowseComp />
 
-  
-      
+
+
+      <Promo />
+      <TopFashion />
+      <Latest />
+      <BrowseComp />
+
+
+
     </div>
   )
 }
