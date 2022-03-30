@@ -4,13 +4,14 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import BrowseProduct from "./BrowseProduct";
 import HeadsetMicIcon from "@mui/icons-material/HeadsetMic";
+import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
+import SupervisorAccountIcon from '@mui/icons-material/SupervisorAccount';
 
 const container = {
   // background:"red",
   minHeight: "100vh",
   width: "100%",
-  padding:"30px 0",
-  marginTop:"400px"
+  marginTop:20
 };
 const header = {
   width: "100%",
@@ -118,17 +119,19 @@ const BrowseComp = () => {
                 fontWeight: "bold",
                 textTransform: "capitalize",
                 color: "#999",
+                textAlign:"justify"
               }}
             >
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
               reiciendis modi quasi laborum maiores, perspiciatis itaque in
               dolor sunt reprehenderit ipsam velit neque dolorem accusantium
-              praesentium doloremque magni, asperiores hic.
+              spiciatis itaque in
+              dolor sunt reprehenderit ipsam velit neque dolorem 
             </Typography>
           </Grid>
           <Grid item md={4} sm={12} xs={12} sx={box}>
             {/* icon */}
-            <HeadsetMicIcon fontSize="large" color="primary" />
+            <LibraryBooksIcon fontSize="large" color="primary" />
             <Typography
               variant="h6"
               fontSize={16}
@@ -162,17 +165,20 @@ const BrowseComp = () => {
                 fontWeight: "bold",
                 textTransform: "capitalize",
                 color: "#999",
+                textAlign:"justify"
               }}
             >
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
+             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
               reiciendis modi quasi laborum maiores, perspiciatis itaque in
               dolor sunt reprehenderit ipsam velit neque dolorem accusantium
-              praesentium doloremque magni, asperiores hic.
+              spiciatis itaque in
+              dolor sunt reprehenderit ipsam velit neque dolorem 
+             
             </Typography>
           </Grid>
           <Grid item md={4} sm={12} xs={12} sx={box}>
             {/* icon */}
-            <HeadsetMicIcon fontSize="large" color="primary" sx={{}}/>
+            <SupervisorAccountIcon fontSize="large" color="primary" sx={{}}/>
             <Typography
               variant="h6"
               fontSize={16}
@@ -207,12 +213,15 @@ const BrowseComp = () => {
                 fontWeight: "bold",
                 textTransform: "capitalize",
                 color: "#999",
+                textAlign:"justify"
               }}
             >
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
               reiciendis modi quasi laborum maiores, perspiciatis itaque in
               dolor sunt reprehenderit ipsam velit neque dolorem accusantium
-              praesentium doloremque magni, asperiores hic.
+              spiciatis itaque in
+              dolor sunt reprehenderit ipsam velit neque dolorem 
+          
             </Typography>
           </Grid>
         </Grid>
