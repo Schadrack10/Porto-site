@@ -4,6 +4,7 @@ import Promo from '../components/Promo'
 import styles from '../styles/Home.module.css'
 import BrowseComp from '../components/Browse-categories/BrowseComp'
 import TopFashion from '../components/TopFashion'
+import Latest from '../components/Latest'
 
 
 
@@ -17,10 +18,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      
-<Promo/>
-<TopFashion/>
-      <BrowseComp />
+     
+    <Promo/>
+    <TopFashion/>
+    <Latest/>
+          <BrowseComp />
 
   
       
