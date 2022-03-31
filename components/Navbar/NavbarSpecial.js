@@ -7,11 +7,12 @@ const NavbarSpecial = (props) => {
     <Box
       sx={{
         height: "48px",
-        background: "blue",
+        background: "#10adee",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         color: "#eee",
+        padding:'8px',
         fontWeight: "600",
       }}
     >

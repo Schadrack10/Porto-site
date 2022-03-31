@@ -2,10 +2,6 @@ import { Button, Grid, Box, Typography, Stack, Divider } from "@mui/material";
 import NavbarSpecial from "./NavbarSpecial";
 import { Countries } from "./Countries";
 import * as React from "react";
-import InputLabel from "@mui/material/InputLabel";
-import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
-import Select from "@mui/material/Select";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import YoutubeIcon from "@mui/icons-material/YouTube";
@@ -54,118 +50,119 @@ export const Navbar = () => {
   };
 
   return (
-    <Stack
-      sx={{
-        height: "200px",
-     
-      }}
-    >
-      <NavbarSpecial />
-      <Box
+    <Box>
+      <Stack
         sx={{
-          padding: "8px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
+          height: "200px",
         }}
       >
-        <Grid container>
-          <Grid
-            item
-            sm={3.5}
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <Typography
-              align={"center"}
+        <NavbarSpecial />
+        <Box
+          sx={{
+            padding: "8px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Grid container>
+            <Grid
+              item
+              sm={3.5}
               sx={{
-                fontSize: "12px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
               }}
             >
-              FREE RETURNS. STANDARD SHIPPING ORDERS $99+{" "}
-            </Typography>
-          </Grid>
-          <Grid
-            item
-            sm={8.5}
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              // background: "yellow",
-            }}
-          >
-            <Grid container>
-              {navLinks.map((link, index) => {
-                return (
-                  <Grid key={index} item sm={1.6}>
-                    <Typography
-                      align={"center"}
-                      sx={{
-                        fontSize: "14px",
-                      }}
-                    >
-                      {link}
-                    </Typography>
-                  </Grid>
-                );
-              })}
+              <Typography
+                align={"center"}
+                sx={{
+                  fontSize: "12px",
+                }}
+              >
+                FREE RETURNS. STANDARD SHIPPING ORDERS $99+{" "}
+              </Typography>
             </Grid>
-  
-            <Dropdown>
-              <Dropdown.Toggle
-                variant="outlined"
-                id="dropdown-basic"
-                value={country}
-                onChange={handleCountry}
-              >
-                USD
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-                {currency_code.map((currency, index) => {
+            <Grid
+              item
+              sm={8.5}
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                // background: "yellow",
+              }}
+            >
+              <Grid container>
+                {navLinks.map((link, index) => {
                   return (
-                    <Dropdown.Item key={index} href="#/action-1">
-                      {currency}
-                    </Dropdown.Item>
+                    <Grid key={index} item sm={1.6}>
+                      <Typography
+                        align={"center"}
+                        sx={{
+                          fontSize: "14px",
+                        }}
+                      >
+                        {link}
+                      </Typography>
+                    </Grid>
                   );
                 })}
-              </Dropdown.Menu>
-            </Dropdown>
+              </Grid>
 
-            <Dropdown>
-              <Dropdown.Toggle
-                variant="outlined"
-                id="dropdown-basic"
-                value={country}
-                onChange={handleCountry}
-              >
-                Country
-              </Dropdown.Toggle>
+              <Dropdown>
+                <Dropdown.Toggle
+                  variant="outlined"
+                  id="dropdown-basic"
+                  value={country}
+                  onChange={handleCountry}
+                >
+                  USD
+                </Dropdown.Toggle>
 
-              <Dropdown.Menu>
-                {Countries.map((country, index) => {
-                  return (
-                    <Dropdown.Item key={index} href="#/action-1">
-                      {country.name}
-                    </Dropdown.Item>
-                  );
-                })}
-              </Dropdown.Menu>
-            </Dropdown>
-            <InstagramIcon sx={{ marginRight: "8px" }} />
-            <FacebookIcon sx={{ marginRight: "8px" }} />
-            <YoutubeIcon sx={{ marginRight: "8px" }} />
+                <Dropdown.Menu>
+                  {currency_code.map((currency, index) => {
+                    return (
+                      <Dropdown.Item key={index} href="#/action-1">
+                        {currency}
+                      </Dropdown.Item>
+                    );
+                  })}
+                </Dropdown.Menu>
+              </Dropdown>
+
+              <Dropdown>
+                <Dropdown.Toggle
+                  variant="outlined"
+                  id="dropdown-basic"
+                  value={country}
+                  onChange={handleCountry}
+                >
+                  Country
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                  {Countries.map((country, index) => {
+                    return (
+                      <Dropdown.Item key={index} href="#/action-1">
+                        {country.name}
+                      </Dropdown.Item>
+                    );
+                  })}
+                </Dropdown.Menu>
+              </Dropdown>
+              <InstagramIcon sx={{ marginRight: "8px" }} />
+              <FacebookIcon sx={{ marginRight: "8px" }} />
+              <YoutubeIcon sx={{ marginRight: "8px" }} />
+            </Grid>
           </Grid>
-        </Grid>
-      </Box>
+        </Box>
 
-      <Divider />
-      <NavSearchRow />
-      <SecondLevelNavBar/>
-    </Stack>
+        <Divider />
+        <NavSearchRow />
+        <SecondLevelNavBar />
+      </Stack>
+    </Box>
   );
 };
