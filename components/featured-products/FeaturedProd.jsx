@@ -49,7 +49,7 @@ const FeaturedProd = ({ img, starAmount, category, title, price }) => {
         <img src={img} alt="img" style={resImg} />
       </Box>
       <Box sx={centerContainer}>
-        <Typography variant="p" fontsize="14" sx={type}>{category}</Typography>
+        <Typography variant="p" fontSize="14" sx={type}>{category}</Typography>
       </Box>
       <Box sx={centerContainer}>
         <StarIcon fontSize="small" />
@@ -59,10 +59,10 @@ const FeaturedProd = ({ img, starAmount, category, title, price }) => {
         <StarIcon fontSize="small" />
       </Box>
       <Box sx={centerContainer}>
-        <Typography variant="p" fontsize="18" >{title}</Typography>
+        <Typography variant="p" fontSize="18" >{title}</Typography>
       </Box>
       <Box sx={centerContainer}>
-        <Typography variant="p" fontsize="18" sx={pricing} >{price}</Typography>
+        <Typography variant="p" fontSize="18" sx={pricing} >{price}</Typography>
       </Box>
       <Box sx={centerContainer}>
          <button style={btn}>Add To Cart</button>
