@@ -20,7 +20,7 @@ const item = {
 
 function Latest() {
   return (
-    <div style={{ marginTop: 30 }}>
+    <div style={{ marginTop: 30 , width:'100%' }}>
       <Box sx={header}>
         <fieldset
           style={{

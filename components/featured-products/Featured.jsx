@@ -6,6 +6,7 @@ import FeaturedProd from "./FeaturedProd";
 
 const container = {
   minHeight: "400px",
+  width:'100%',
   // display: "flex",
   // flexWrap: "wrap",
 };
