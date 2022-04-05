@@ -10,6 +10,7 @@ import ProductsColumn from "../components/products-column/ProductsColumn";
 import Footer from "../components/footer/Footer";
 import { Navbar } from "../components/Navbar/Navbar";
 import NewArrival from "../components/new-arrivals/NewArrival";
+import Banner from "../components/Banner";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head> */}
       <Navbar />
+      <Banner />
       <Featured />
       <NewArrival/>
       <TopFashion />

@@ -209,22 +209,6 @@ const SecondLevelNavBar = (props) => {
             </Typography>
           </Grid>
         </Grid>
-        {/* <Grid container>
-          {navLinks.map((link, index) => {
-            return (
-              <Grid key={index} item sm={1.6}>
-                <Typography
-                  align={"center"}
-                  sx={{
-                    fontSize: "14px",
-                  }}
-                >
-                  {link}
-                </Typography>
-              </Grid>
-            );
-          })}
-        </Grid> */}
       </Box>
       <Box>
         <Button sx={{

@@ -114,12 +114,12 @@ const NavSearchRow = (props) => {
           }}
         >
           <Grid container>
-            <Grid item sm={6}>
+            <Grid item sm={7}>
               <NavInput />
             </Grid>
             <Grid
               item
-              sm={6}
+              sm={5}
               sx={{
                 display: "flex",
                 alignItems: "center",

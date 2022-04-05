@@ -164,7 +164,7 @@ const ProductsColumn = () => {
       <Grid container spacing={2}>
         {products_Arr.map((product, index) => {
           return (
-            <Grid
+            <Grid key={index}
               item
               xs={3}
               sx={{
