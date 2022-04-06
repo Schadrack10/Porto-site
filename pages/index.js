@@ -11,6 +11,7 @@ import Footer from "../components/footer/Footer";
 import { Navbar } from "../components/Navbar/Navbar";
 import NewArrival from "../components/new-arrivals/NewArrival";
 import Banner from "../components/Banner";
+import Brands from "../components/brands";
 
 export default function Home() {
   return (
@@ -34,6 +35,7 @@ export default function Home() {
       <Latest />
       <Promo />
       <BrowseComp />
+      <Brands/>
       <ProductsColumn />
       <Footer />
     </div>
